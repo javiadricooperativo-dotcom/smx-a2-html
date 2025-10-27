@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curs Online</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Inscripció al curs online de Hardware
+        </h1>
+    </header>
+    <main>
+        <form action="./formularicomplet.html" method="get">
+            <fieldset>
+                <legend>
+                    DADES PERSONALS
+                </legend>
+                <input type="text" name="nom" id="Nom" required minlength="3" maxlength="12" placeholder="Escriu el teu nom">
+                <label for="Nom">Nom</label>
+                <br>
+                <input type="text" name="cognom" id="cognom" required placeholder="Escriu els teus cognoms">
+                <label for="cognom">Cognoms</label>
+                <br>
+                <input type="email" name="email" id="email" required placeholder="exemple@gmail.com">
+                <label for="email">Correu Electronic</label>
+                <br>
+                <input type="tel" name="telefon" id="tlf" required pattern="[6-7]{1}[0-9]{8}" placeholder="611223344">
+                <label for="tlf">Telèfon (ha de ser numero de Espanya i no posar prefix ) </label>
+                <br>
+                <input type="date" id="data" name="data" min="31-12-2009">
+                <label for="data">Data de naixement (minim 16 anys complits al 2025) </label>
+            </fieldset>
+            <fieldset>
+                <legend>Tipus de curs i experiència previa</legend>
+                    <label>Que cursos vols cursar?</label>
+                <label><input type="radio" name="Reparaciópcs">Reparació de PCs</label>
+                <label><input type="radio" name="Muntatge/manteniment">Muntatge i manteniment</label>
+                <label><input type="radio" name="reparaciocomponents">Reparació de components</label>
+                <label><input type="radio" name="reparacióperiferics">Reparació periferics</label>
+                <br>
+                <label>Has tingut experiència previa?</label>
+                <select name="Expprevia">
+                <optgroup label="Has tingut experiència previa?">
+                <option value="Si">Si</option>
+                <option value="radio">No</option>
+                </select>
+                </optgroup>
+            </fieldset>
+            <fieldset>
+                <legend>Interessos</legend>
+                <textarea name="interessos" id="interessos" required minlength="50" maxlength="500"></textarea>
+                <label for="interessos">Fes un text de entre 50 a 500 caracters explicant que t'atrau i quins son els interessos d'aquest/s curs/os</label>
+            </fieldset>
+            <fieldset>
+                <legend>Fitxer i acceptacions de condicions</legend>
+                <input type="file" name="fitxer" id="fixer">
+                <label for="fitxer">accepta extensions.pdf</label>
+                <br>
+                <input type="checkbox" name="acceptacondicions" id="acceptacondicions" required>
+                <label for="acceptacondicions">Accepta els termes i les condicions</label>
+            </fieldset>
+            <button type="submit">Enviar formulari</button>
+        </form>
+    </main>
+    <footer>
+        <h5>&copy;2025 tots els drets reservats</h5>
+        <a href="../index.html">Tornar a l'index genreral</a>
+    </footer>
+</body>
+</html>
